@@ -6,6 +6,21 @@ The purpose of this project is to understand machine learning through implementa
 be changed to get desired model accuracy. Also, modifying the neural network, by adding or removing layers. Once training on the model is done, testing data can be passed into the model and predictions are returned.
 ## Introduction
 Machine learning has become a fast-growing field in recent years. It is becoming more useful and being implemented in more things around us, as it is getting better. One of the biggest uses for machine learning is to be able to identify features in images. Machine learning can identify objects, separate objects, modify objects, and many other possibilities. The applications of machine learning is endless, and things like self-driving cars show how effective it can be. In this project, I wanted to identify the facial expressions of a person in an image. The data contains three classifications of facial expressions, angry, happy, or neutral. I will be building a neural network using Pytorch, a library for machine learningbuilt for the Python programming language.
+## Methods
+- Custom Image Dataset to read the csv files and convert data to images
+- Convolutional Neural Network to create a model
+  - Four convolutional layers
+  - Three fully connect layers
+- Data augmentation to increase dataset size
+  - Randomly rotated data
+  - Randomly cropped and resized data
+- Split data into two sets of 90% and 10% of original size
+  - Training dataset
+  - Validation dataset
+- Added weight decay to the stochastic gradient descent
+- Added momentum to the stochastic gradient descent
+- Modified epochs, learning rate, and batch size to best fit my neural 
+network
 ## Results
 - The model has an accuracy rate of about 81% on the testing data
 - Convolutional Neural Network provided higher accuracy than a normal neural network
